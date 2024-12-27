@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage with Sections</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styling for the sections */
+        .heading-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .description-section {
+            background-color: #ffffff;
+            padding: 30px 15px;
+        }
+
+        /* Custom styles for left-aligned text */
+        .description-section p {
+            text-align: left;
+        }
+
+        /* Ensure responsiveness for mobile devices */
+        .container {
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!-- First Section: Heading -->
+        <div class="heading-section text-center">
+            <h1 class="display-4">Welcome to Our Website</h1>
+        </div>
+
+        <!-- Second Section: Description -->
+        <div class="description-section">
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis dui sit amet pharetra dignissim. Curabitur laoreet arcu nisi, ut fermentum urna cursus non. Sed id dui vel nisl convallis dictum ut sed mi. Sed nec odio sed leo volutpat viverra at at erat. Vivamus auctor mauris sit amet risus viverra, ac cursus lorem auctor. Integer vel turpis eget arcu auctor placerat. Etiam id eros sed leo convallis tincidunt.</p>
+            <p>Proin vitae justo id erat vulputate mollis. Fusce facilisis turpis at dui suscipit, non lacinia metus tristique. Aliquam erat volutpat. Mauris ut tempor lacus, nec sodales nunc. Cras maximus, purus vel pharetra tincidunt, velit nulla volutpat lorem, euismod gravida turpis magna a neque. Nam pretium orci augue, eget condimentum leo volutpat sit amet. Integer cursus urna quis purus scelerisque, sit amet ullamcorper enim pretium.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

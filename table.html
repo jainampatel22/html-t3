@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tables with Random Data</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Set font size in rem units */
+        .table th, .table td {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Responsive Tables with Random Data</h1>
+
+        <div class="row">
+            <!-- Section 1: Table 1 -->
+            <div class="col-12 col-md-6 mb-4">
+                <h3>Section 1: Table 1</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table1-body">
+                            <!-- Random data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Section 2: Table 2 -->
+            <div class="col-12 col-md-6">
+                <h3>Section 2: Table 2</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table2-body">
+                            <!-- Random data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Function to generate random data for the tables
+        function generateRandomData(tableId) {
+            const data = [];
+            const numRows = 5;
+
+            for (let i = 1; i <= numRows; i++) {
+                if (tableId === "table1-body") {
+                    // Generate random data for table 1
+                    data.push([
+                        i,
+                        `Name ${i}`,
+                        Math.floor(Math.random() * 40) + 20, // Random age between 20-60
+                        `Country ${Math.floor(Math.random() * 5) + 1}`
+                    ]);
+                } else {
+                    // Generate random data for table 2
+                    data.push([
+                        i,
+                        `Product ${i}`,
+                        `$${(Math.random() * 100).toFixed(2)}`, // Random price between 0-100
+                        Math.floor(Math.random() * 50) + 1 // Random stock between 1-50
+                    ]);
+                }
+            }
+
+            // Insert the random data into the table body
+            data.forEach(row => {
+                const rowHtml = `<tr>
+                    <td>${row[0]}</td>
+                    <td>${row[1]}</td>
+                    <td>${row[2]}</td>
+                    <td>${row[3]}</td>
+                </tr>`;
+                $(`#${tableId}`).append(rowHtml);
+            });
+        }
+
+        // Call the function to generate and insert random data into both tables
+        $(document).ready(function() {
+            generateRandomData("table1-body");
+            generateRandomData("table2-body");
+        });
+    </script>
+</body>
+</html>

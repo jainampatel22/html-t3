@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sections</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the layout */
+        .section {
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Ensure sections are aligned in a row */
+        .row {
+            display: flex;
+        }
+
+        /* Ensure the sections don't wrap on small screens */
+        @media (max-width: 767px) {
+            .section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Styling for blockquote */
+        blockquote {
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <!-- Row with 4 sections -->
+        <div class="row">
+
+            <!-- First Section: Text-related components -->
+            <div class="section">
+                <h3>Text Components</h3>
+                <p>This is a <abbr title="Hypertext Markup Language">HTML</abbr> paragraph. It uses <code>pre</code> and <abbr title="Cascading Style Sheets">CSS</abbr> for styling.</p>
+                <pre>Here is a preformatted text block.
+It maintains spacing and line breaks.</pre>
+            </div>
+
+            <!-- Second Section: Table with text transformations -->
+            <div class="section">
+                <h3>Text Transformation Table</h3>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Text Transformation</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lowercase</td>
+                            <td>hello world</td>
+                        </tr>
+                        <tr>
+                            <td>Uppercase</td>
+                            <td>HELLO WORLD</td>
+                        </tr>
+                        <tr>
+                            <td>Capitalize</td>
+                            <td>Hello World</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Third Section: Justified Text -->
+            <div class="section">
+                <h3>Justified Text</h3>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget risus nulla. Vivamus in efficitur justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam sit amet ante sit amet velit lacinia tempus. Phasellus vestibulum orci sit amet fringilla suscipit. Cras vel odio sit amet nunc vehicula egestas. Etiam ac enim purus. Vivamus scelerisque urna non nisl pretium euismod.</p>
+            </div>
+
+            <!-- Fourth Section: Blockquote -->
+            <div class="section">
+                <h3>Blockquote</h3>
+                <blockquote>
+                    <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
+                </blockquote>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

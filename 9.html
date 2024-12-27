@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse Button Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>Bootstrap Collapse Example</h2>
+
+        <!-- Collapse Button -->
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" >
+            Toggle Paragraph
+        </button>
+
+        <!-- Collapsible Paragraph Section -->
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body mt-3">
+                <p>
+                    This is a collapsible paragraph. By clicking the button above, you can toggle the visibility of this paragraph.
+                    Bootstrap's collapse feature makes it easy to show and hide content with a simple button click.
+                </p>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animation p-5 "style="width: 10%;" ></div>
+        </div>
+
+        <div class="dropup">
+
+            <button type="button" class="btn btn-primary dropdown-toggle" data-
+            toggle="dropdown">
+            
+            Dropup button
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Rose</a>
+            <a class="dropdown-item" href="#">Lotus</a>
+            </div>
+            </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

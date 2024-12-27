@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Search</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styling for the Sections */
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #007bff;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .section a {
+            font-size: 1.1rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- First Section: Heading -->
+            <div class=" col-sm-4 section">
+                <h2>Image Search</h2>
+                <p>Click on the links below to search for respective images. This is a simple webpage demonstrating responsive layout using Bootstrap. The layout will adjust based on the screen size.</p>
+            </div>
+
+            <!-- Second Section: Description -->
+            <div class=" col-sm-4 section">
+                <h3>Description</h3>
+                <p>This webpage allows users to search for images related to a specific topic. The descriptions provide the necessary details, and the links help the user to search images on various platforms like Google, Unsplash, etc.</p>
+            </div>
+
+            <!-- Third Section: Links to Search Images -->
+            <div class=" col-sm-4 section">
+                <h3>Search Links</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?hl=en&tbm=isch&q=nature" target="_blank">Nature Images (Google)</a></li>
+                    <li><a href="https://unsplash.com/s/photos/nature" target="_blank">Nature Images (Unsplash)</a></li>
+                    <li><a href="https://www.pexels.com/search/nature/" target="_blank">Nature Images (Pexels)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
